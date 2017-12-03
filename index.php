@@ -1,5 +1,5 @@
 <?php 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {  
+if ($_SERVER['REQUEST_METHOD'] == 'POOST') {  
 
   function convertCurrency($amount, $from, $to){
   $data = file_get_contents("https://finance.google.com/finance/converter?a=$amount&from=$from&to=$to");
@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <div class="container" >
     <div class="row">
         <div class="col-sm-4">
-		 <form action="index.php" method="post">
+		 <form action="index.html" method="post">
       <div class="form-group">
                 <h1 class="bg-primary" >Currency-Exchange</h1>
                 <p class="bg-light" align="center">Bootstrap-4</p>
